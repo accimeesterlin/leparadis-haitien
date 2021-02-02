@@ -552,7 +552,7 @@ jQuery(owl_single).each(function() {
 function init_twitter_carusel () {
 	if($('.twitter-1').length) {
 	 $('.twitter-1').tweet({
-		username: 'Creative_WS',
+		username: 'paradishaitien',
 		count: 3,
 		loading_text: 'loading twitter feed...',
 		template: "<i class='fa fa-twitter twitt-icon'></i><p><a href='{user_url}'>@{screen_name}</a>{join}{text}<br>{time}</p>"
