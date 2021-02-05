@@ -1323,11 +1323,11 @@ function magicline_init(){
 
 		var $magicLine = $(".magic-line-main-li");
 
-		$magicLine
-			.width($(".active-li").width())
-			.css("left", $(".active-li").position().left)
-			.data("origLeft", $magicLine.position().left)
-			.data("origWidth", $magicLine.width());
+		// $magicLine
+		// 	.width($(".active-li").width())
+		// 	.css("left", $(".active-li").position().left)
+		// 	.data("origLeft", $magicLine.position().left)
+		// 	.data("origWidth", $magicLine.width());
 
 		$(".magic-line-main > li:not(.slash)").on({
 			mouseenter: function() {
