@@ -138,9 +138,16 @@
     <script src="./partialsCompiled.js"></script>
     <script>
       const container = document.querySelector("body");
-      const context = {};
-      const header = Handlebars.templates.home(context);
-      container.innerHTML = header;
+      fetch("./data/testimonial.json")
+        .then((res) => res.json())
+        .then((data) => {
+          const context = {
+            testimonial: data,
+          };
+          const header = Handlebars.templates.home(context);
+          container.innerHTML = header;
+        })
+        .catch((error) => console.log("Error occurs: ", error));
     </script>
     <!-- ! news popup-->
     <script src="https://www.youtube.com/player_api"></script>

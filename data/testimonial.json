@@ -1,0 +1,58 @@
+[
+    {
+        "banner_img_url": "./img/testimonial-background.png",
+        "banner_url": "hotels-details.html",
+        "author_img_url": "./img/testimonial-picture.png",
+        "firstname": "Nicole",
+        "lastname": "Beck",
+        "short_description": "Suspe blandit orci quis lorem eleifend maximus. Quisque nec.",
+        "detail_text": "Read more",
+        "readmore_url": "page-about-us.html",
+        "start_quantity": "5"
+    },
+    {
+        "banner_img_url": "./img/testimonial-background.png",
+        "banner_url": "hotels-details.html",
+        "author_img_url": "./img/testimonial-picture.png",
+        "firstname": "Peter",
+        "lastname": "Robertson",
+        "short_description": "Suspe blandit orci quis lorem eleifend maximus. Quisque nec.",
+        "detail_text": "Read more",
+        "readmore_url": "page-about-us.html",
+        "start_quantity": "5"
+    },
+    {
+        "banner_img_url": "./img/testimonial-background.png",
+        "banner_url": "hotels-details.html",
+        "author_img_url": "./img/testimonial-picture.png",
+        "firstname": "Kathy",
+        "lastname": "Harrison",
+        "short_description": "Suspe blandit orci quis lorem eleifend maximus. Quisque nec.",
+        "detail_text": "Read more",
+        "readmore_url": "page-about-us.html",
+        "start_quantity": "5"
+    },
+    {
+        "banner_img_url": "./img/testimonial-background.png",
+        "banner_url": "hotels-details.html",
+        "author_img_url": "./img/testimonial-picture.png",
+        "firstname": "Kathy",
+        "lastname": "Harrison",
+        "short_description": "Suspe blandit orci quis lorem eleifend maximus. Quisque nec.",
+        "detail_text": "Read more",
+        "readmore_url": "page-about-us.html",
+        "start_quantity": "5"
+    },
+    {
+        "banner_img_url": "./img/testimonial-background.png",
+        "banner_url": "hotels-details.html",
+        "author_img_url": "./img/testimonial-picture.png",
+        "firstname": "Kathy",
+        "lastname": "Harrison",
+        "short_description": "Suspe blandit orci quis lorem eleifend maximus. Quisque nec.",
+        "detail_text": "Read more",
+        "readmore_url": "page-about-us.html",
+        "start_quantity": "5"
+    }
+    
+]
