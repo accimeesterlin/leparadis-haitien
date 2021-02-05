@@ -574,10 +574,10 @@ function init_twitter_carusel () {
 		});
 	}
 	$('.twitter-footer').tweet({
-		username: 'Creative_WS',
+		username: 'paradishaitien',
 		count: 1,
 		loading_text: 'loading twitter feed...',
-		template: "<i class='fa fa-twitter twitt'></i><p><a class='link-color' href='{user_url}'>@{screen_name}</a>{join}{text}<br>{time}</p>"
+		template: "<i class='fa fa-twitter twitt'></i><p><a class='link-color' href='https://twitter.com/paradishaitien'>@paradishaitien</a>{join}{text}<br>{time}</p>"
 	});
 }
 

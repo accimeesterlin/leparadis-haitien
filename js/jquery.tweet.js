@@ -11,11 +11,11 @@
 	$.fn.tweet = function(o){
 		var s = $.extend({
 			modpath: "php/twitter/cws_tweet.php",				// [string]	 relative URL to Tweet.js mod (see https://github.com/StanScates/Tweet.js-Mod)
-			username: null,													// [string or array] required unless using the 'query' option; one or more twitter screen names (use 'list' option for multiple names, where possible)
+			username: "paradishaitien",													// [string or array] required unless using the 'query' option; one or more twitter screen names (use 'list' option for multiple names, where possible)
 			list_id: null,													// [integer]	ID of list to fetch when using list functionality
 			list: null,															// [string]	 optional slug of list belonging to username
 			favorites: false,												// [boolean]	display the user's favorites instead of his tweets
-			query: null,														// [string]	 optional search query (see also: http://search.twitter.com/operators)
+			query: "paradishaitien",														// [string]	 optional search query (see also: http://search.twitter.com/operators)
 			avatar_size: null,											// [integer]	height and width of avatar if displayed (48px max)
 			count: 3,																// [integer]	how many tweets to display?
 			fetch: null,														// [integer]	how many tweets to fetch via the API (set this higher than 'count' if using the 'filter' option)
