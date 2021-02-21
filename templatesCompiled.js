@@ -14,7 +14,7 @@ templates['home'] = template({"1":function(container,depth0,helpers,partials,dat
         return undefined
     };
 
-  return ((stack1 = container.invokePartial(lookupProperty(partials,"specials-offer"),depth0,{"name":"specials-offer","data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(lookupProperty(partials,"specials-offer"),depth0,{"name":"specials-offer","hash":{"destination":(depth0 != null ? lookupProperty(depth0,"destination") : depth0)},"data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"3":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {
@@ -41,7 +41,7 @@ templates['home'] = template({"1":function(container,depth0,helpers,partials,dat
         return undefined
     };
 
-  return ((stack1 = container.invokePartial(lookupProperty(partials,"testimonials"),depth0,{"name":"testimonials","hash":{"testimonial":(depth0 != null ? lookupProperty(depth0,"testimonial") : depth0)},"data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(lookupProperty(partials,"testimonials"),depth0,{"name":"testimonials","hash":{"testimonials":(depth0 != null ? lookupProperty(depth0,"testimonials") : depth0)},"data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"9":function(container,depth0,helpers,partials,data) {
     var stack1, lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {

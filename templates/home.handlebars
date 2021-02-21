@@ -4,7 +4,7 @@
 
     {{!-- Welcome Section --}}
     {{#if settings.0.isWelcomeVisible}}
-        {{>specials-offer}}
+        {{>specials-offer destination=destination}}
     {{/if}}
     
     
@@ -23,7 +23,7 @@
 
     {{!-- Testimonials Section --}}
     {{#if settings.0.isTestimonialsVisible}}
-        {{>testimonials testimonial=testimonial}}
+        {{>testimonials testimonials=testimonials}}
     {{/if}}
 
 
