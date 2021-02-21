@@ -1,13 +1,44 @@
 {{>header}}
 <div class="content-body">
     {{>banner}}
-    {{>specials-offer}}
-    {{>counter}}
-    {{>paralax}}
-    {{>recommended}}
-    {{>testimonials testimonial=testimonial}}
-    {{>gallery}}
-    {{>latest-news}}
+
+    {{!-- Welcome Section --}}
+    {{#if settings.0.isWelcomeVisible}}
+        {{>specials-offer}}
+    {{/if}}
+    
+    
+    {{!-- Destination Section --}}
+    {{#if settings.0.isStatisticVisible}}
+        {{>counter}}
+    {{/if}}
+
+    {{>paralax aboutSection=aboutSection}}
+
+    {{!-- Recommended Hotels Section --}}
+    {{#if settings.0.isRecommendedHotelsVisible}}
+        {{>recommended}}
+    {{/if}}
+    
+
+    {{!-- Testimonials Section --}}
+    {{#if settings.0.isTestimonialsVisible}}
+        {{>testimonials testimonial=testimonial}}
+    {{/if}}
+
+
+    {{!-- Photo Gallery Section --}}
+    {{#if settings.0.isPhotoGallery}}
+        {{>gallery}}
+    {{/if}}
+
+
+    {{!-- Blog Post Section --}}
+   {{#if settings.0.isLatestBlogVisible}}
+        {{>latest-news}}
+   {{/if}}
+
+
     {{>news-letter}}
 </div>
 

@@ -133,20 +133,53 @@
       </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="./templatesCompiled.js"></script>
     <script src="./partialsCompiled.js"></script>
     <script>
       const container = document.querySelector("body");
-      fetch("./data/testimonial.json")
-        .then((res) => res.json())
-        .then((data) => {
-          const context = {
-            testimonial: data,
-          };
-          const header = Handlebars.templates.home(context);
-          container.innerHTML = header;
-        })
+      const client = contentful.createClient({
+        space: "50w1akp46zqx",
+        accessToken: "xMskJ1tEozpjq4UQofrXd2ZDbUb6eLSXaPN13O02TLA",
+        linking_field: 'fields.image_url.sys.id'
+      });
+
+      client
+          .getEntries({
+          })
+          .then((entries) => {
+            let context = {
+              homePageInformation: [],
+              destination: [],
+              settings: [],
+              aboutSection: [],
+              banner: [],
+              latestBlog: [],
+              navigationMenu: [],
+              recommendedHotels: [],
+              socialMediaIcons: [],
+              statistic: [],
+              testimonials: [],
+            };
+
+            const list_items = entries.items.map((item) => {
+              const fields = item.fields;
+              const sys = item.sys;
+              const contentTypeId = sys.contentType.sys.id;
+              context[contentTypeId].push(fields);
+
+              return {
+                ...item.fields
+              };
+            });
+            console.log('List Items: ', list_items);
+            console.log('context: ', context);
+
+            const header = Handlebars.templates.home(context);
+            container.innerHTML = header;
+
+          })
         .catch((error) => console.log("Error occurs: ", error));
     </script>
     <!-- ! news popup-->
