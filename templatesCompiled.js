@@ -59,7 +59,7 @@ templates['home'] = template({"1":function(container,depth0,helpers,partials,dat
         return undefined
     };
 
-  return ((stack1 = container.invokePartial(lookupProperty(partials,"latest-news"),depth0,{"name":"latest-news","data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
+  return ((stack1 = container.invokePartial(lookupProperty(partials,"latest-news"),depth0,{"name":"latest-news","hash":{"latestBlog":(depth0 != null ? lookupProperty(depth0,"latestBlog") : depth0)},"data":data,"indent":"        ","helpers":helpers,"partials":partials,"decorators":container.decorators})) != null ? stack1 : "");
 },"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
     var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {}), lookupProperty = container.lookupProperty || function(parent, propertyName) {
         if (Object.prototype.hasOwnProperty.call(parent, propertyName)) {

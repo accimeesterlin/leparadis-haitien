@@ -8628,6 +8628,7 @@ footer.footer.fixed {
     transition: all 0.5s;
     background: #ffffff;
     max-width: 770px;
+    margin: 10px;
 }
 
 .blog-item.border {
@@ -8661,6 +8662,7 @@ footer.footer.fixed {
 .blog-item .blog-media .pic {
     position: relative;
     z-index: 1;
+    max-width: 200px;
 }
 
 .blog-item .blog-media .pic .links {
@@ -8808,6 +8810,7 @@ footer.footer.fixed {
 
 .blog-item.boxed .blog-media .pic img {
     width: 100%;
+    max-width: 300px;
 }
 
 .blog-item.boxed .blog-media .pic:after {
@@ -8861,6 +8864,7 @@ footer.footer.fixed {
 
     .blog-item .blog-media .pic img {
         width: 100%;
+        max-width: 200px;
     }
 
     .blog-item .blog-media .pic:after {
@@ -10135,6 +10139,7 @@ aside:last-child {
     display: block;
     text-align: center;
     margin-top: 25px;
+    display: flex;
 }
 
 .carousel-pag .owl-pagination .owl-page,
